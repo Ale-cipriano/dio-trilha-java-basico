@@ -1,40 +1,31 @@
+import java.util.Locale;
+import java.util.Scanner;
+
 /**
  Desafio para exercitar conteúdo apresentado no módulo de Sintaxe. 
  */
 
-		/* String nome = args[0];
-			String sobrebome  = args[1];
-			int idade = Integer.valueOf(args[2]);
-			double altura = Double.valueOf(args[3]); 
-			
-			// Criando o objeto "scaner"
-			
-			Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
-			
-			System.out.println("Digite o seu nome");
-			String nome = scanner.next();
-			
-			System.out.println("Digite o seu sobrenome");
-			String sobrenome = scanner.next();
-			
-			System.out.println("Digite a sua idade");
-			int idade = scanner.nextInt();
-			
-			System.out.println("Digite a sua altura");
-			double altura = scanner.nextDouble();
-			
-			
-			// Imprimindo
-			System.out.println("Olá, me chamo " + nome + " " + sobrenome);
-			System.out.println(" Tenho " + idade + " " + " anos");
-			System.out.println("Minha altura é " + altura + " m");  */
-			
+					
 
 public class ContaTerminal {
 
 	public static void main(String[] args) {
-		System.out.println("Hello Git!");
-		System.out.println("Integrando o Eclipse");
+
+		Double saldo = 237.48;         
+
+
+		Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+
+		System.out.println("Por favor, digite o número da sua conta");
+		int numero = scanner.nextInt();
+
+		System.out.println("Por favor, digite o número da agência");
+		int agencia = scanner.nextInt();
+
+		System.out.println("Por favor, digite o seu nome");
+		String nomecliente = scanner.next();
+
+		System.out.println("Olá " + nomecliente + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numero + " e seu saldo "+ saldo + " já está disponível para saque.");
 
 	}
 
